@@ -1,0 +1,29 @@
+#rafa{
+    position: absolute;
+    width: 268px;
+    height: 540px;
+    left: 81px;
+    top: 1705px;
+    
+    background: #38CFFF;
+    border-radius: 27px;
+
+
+    position: absolute;
+    width: 240px;
+    height: 103px;
+    left: 95px;
+    top: 1901px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+}
