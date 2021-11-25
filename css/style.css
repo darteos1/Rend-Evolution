@@ -26,4 +26,23 @@
 
     color: #000000;
 
+
+    
+    position: absolute;
+    width: 235px;
+    height: 232px;
+    left: 97px;
+    top: 2007px;
+
+    font-family: Zilla Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
 }
