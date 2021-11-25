@@ -1,34 +1,98 @@
-#rafa{
+.rel{
     position: absolute;
     width: 268px;
     height: 540px;
     left: 81px;
     top: 1705px;
-    
     background: #38CFFF;
     border-radius: 27px;
-
-
-    position: absolute;
-    width: 240px;
-    height: 103px;
-    left: 95px;
-    top: 1901px;
-
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
     line-height: 41px;
     display: flex;
-    align-items: center;
-    text-align: center;
-
+    align-items:baseline;
+    text-align:center;
     color: #000000;
 
-
-    
+}
+#venom{    
     position: absolute;
+    width: 268px;
+    height: 540px;
+    left: 81px;
+    top: 1705px;
+    background: #38CFFF;
+    border-radius: 27px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    display: flex;
+    align-items:baseline;
+    text-align:center;
+    color: #bea9a9;
+
+}
+.retado{
+    position: absolute;
+    width: 268px;
+    height: 540px;
+    left: 81px;
+    top: 1705px;
+    background: #38CFFF;
+    border-radius: 27px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    display: flex;
+    align-items:baseline;
+    text-align:center;
+    color: #bea9a9;
+}
+
+.linha{
+    position: absolute;
+    width: 268px;
+    height: 540px;
+    left: 81px;
+    top: 1705px;
+    background: #38CFFF;
+    border-radius: 27px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    display: flex;
+    align-items:baseline;
+    text-align:center;
+    color: #bea9a9;
+
+}
+
+
+
+
+
+
+
+
+
+    /* position: absolute;
+    width: 240px;
+    height: 103px;
+    left: 95px;
+    top: 1901px; */
+
+
+
+
+   /* position: absolute;
     width: 235px;
     height: 232px;
     left: 97px;
@@ -43,6 +107,4 @@
     align-items: center;
     text-align: center;
 
-    color: #000000;
-
-}
+    color: #000000; */
