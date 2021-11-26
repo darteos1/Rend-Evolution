@@ -1,110 +1,111 @@
-.rel{
-    position: absolute;
-    width: 268px;
-    height: 540px;
-    left: 81px;
-    top: 1705px;
-    background: #38CFFF;
-    border-radius: 27px;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 41px;
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    :root {
+      scroll-behavior: smooth;
+    }
+  }
+  body {
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  h4, .h4, h2, .h2, h1, .h1 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  h4, .h4 {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+  a {
+    color: #12b9ec;
+    text-decoration: underline ;
+  }
+  .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  .container,
+  .container-sm {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 1200px) {
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+      max-width: 1140px;
+    }
+  }
+  .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
     display: flex;
-    align-items:baseline;
-    text-align:center;
-    color: #000000;
-
-}
-#venom{    
-    position: absolute;
-    width: 268px;
-    height: 540px;
-    left: 81px;
-    top: 1705px;
-    background: #38CFFF;
-    border-radius: 27px;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 41px;
-    display: flex;
-    align-items:baseline;
-    text-align:center;
-    color: #bea9a9;
-
-}
-.retado{
-    position: absolute;
-    width: 268px;
-    height: 540px;
-    left: 81px;
-    top: 1705px;
-    background: #38CFFF;
-    border-radius: 27px;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 41px;
-    display: flex;
-    align-items:baseline;
-    text-align:center;
-    color: #bea9a9;
-}
-
-.linha{
-    position: absolute;
-    width: 268px;
-    height: 540px;
-    left: 81px;
-    top: 1705px;
-    background: #38CFFF;
-    border-radius: 27px;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 41px;
-    display: flex;
-    align-items:baseline;
-    text-align:center;
-    color: #bea9a9;
-
-}
-
-
-
-
-
-
-
-
-
-    /* position: absolute;
-    width: 240px;
-    height: 103px;
-    left: 95px;
-    top: 1901px; */
-
-
-
-
-   /* position: absolute;
-    width: 235px;
-    height: 232px;
-    left: 97px;
-    top: 2007px;
-
-    font-family: Zilla Slab;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 36px;
-    display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) / -2);
+    margin-left: calc(var(--bs-gutter-x) / -2);
+  }
+  .col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+  }
+  .btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
     text-align: center;
-
-    color: #000000; */
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background-color: transparent;
+    border: 0.125rem solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  .btn-outline-light {
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+  }
+  .btn-outline-light:hover {
+    color: #000;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+  .btn-social {
+    border-radius: 100%;
+    display: inline-flex;
+    width: 3.25rem;
+    height: 3.25rem;
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #00B9F3;
+    color: #fff;
+  }
