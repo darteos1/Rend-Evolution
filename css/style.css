@@ -104,3 +104,38 @@ body {
     --background: #9ffa0c;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   }
+
+
+.cont_card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: rgb(247, 9, 9);
+    width: 200px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 15px;
+}
+.card_imagem{
+    
+    height: 120px;
+    margin-bottom: 15px;
+    background-size: cover;
+}
+.cardi-1{
+    background-image: url(/img/autodesk\ maya.jpg);
+}
+.cardi-2{
+    background-image: url(/img/duvida.jpg);
+}
+.cardi-3{
+    background-image: url(/img/globo.png);
+}
+.cardi-4{
+    background-image: url(/img/gaveta\ films.jpg);
+}
+.card:hover{
+    transform: scale(1.1);
+}
