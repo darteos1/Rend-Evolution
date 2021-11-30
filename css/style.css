@@ -14,7 +14,7 @@ body {
     --text: #417be6;
     --text-inverse: #333;
     --background: transparent;
-    position: fixed;
+    position: fixed; /*Ancora, deixa ele fixo*/
     top: 0;
     left: 0;
     right: 0;
