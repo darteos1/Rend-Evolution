@@ -12,43 +12,45 @@
     max-height:150px;
     width: auto;
     height: auto;
+    margin: 10px 100px 10px;
 }
 #menu_container{
     background-color: rgb(69, 69, 80);
 }
 
 #menu_container ul {
-    max-width: 800px;
+    max-width: 600px;
     list-style: none;
     padding: 0;
+    
 }
 
 #menu_container ul li {
     display: inline-flex;
-    flex-direction: column;
+    flex-direction: row; /*direção na horizoltal, esquerda/direita*/
     align-items: center;
     row-gap: 2px;
+    
 }
 
 #menu_container ul li a {
+    
+    margin-right: auto;
+    margin-left: auto;
     color: #FFF;
     padding: 20px;
     display: inline-block;
     text-decoration: none;
-    transition: background 4s;
+    transition: background 2s;
+    border-radius: 15px;
+    
 }
 
 #menu_container ul li a:hover {
     background-color: rgb(24, 139, 233);
 }
 
-#menu_container ul li:last-child a {
-    float: right;
-    background-color: rgb(24, 139, 233);
-}
-.button1{
-    color: rgb(221, 225, 13);
-}
+
 
 
 
@@ -100,26 +102,8 @@ section{
 .card:hover{
     transform: scale(1.1);
 }
-.col-sm-4:nth-child(1).card, .col-sm-4:nth-child(1).card .title .fa{background: linear-gradient(-45deg, #f403d1, #64b5f6);}
-.col-sm-4:nth-child(2).card, .col-sm-4:nth-child(2).card .title .fa{background: linear-gradient(-45deg, #ffe61f, #f321d7);}
-.col-sm-4:nth-child(3).card, .col-sm-4:nth-child(3).card .title .fa{background: linear-gradient(-45deg, #24ff72, #9a4eff);}
-/*laço vermelho no card
-.card::before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    background: rgb(242, 16, 16);
-    z-index: 1;
-    transform: skewY(-9deg) scale(1.0);
-}*/
 
-/*simbolo do direct*/
-
-
-/*texto em baixo do direct*/
+/*texto em baixo da imagem*/
 .img_card h2{
     position: relative;
     margin: 20px 0 0;
