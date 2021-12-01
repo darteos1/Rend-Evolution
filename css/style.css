@@ -130,6 +130,7 @@ body {
 }
 .card{
     background-color: rgb(208, 204, 204);
+    background-color: #38CFFF;
     width: 200px;
     height: 500px;
     margin: 30px;
