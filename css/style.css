@@ -2,12 +2,19 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
-  
+
 .site-logo {
   font-weight: 900;
-  font-size: 0.8rem;
+  font-size: 3rem;
   color: var(--text);
   text-decoration: none;
+}
+
+.titulos h1{
+  font-size: 50px;
+  text-align: center;
+  padding: 15px;
+  margin: 30px;
 }
   
 header {
@@ -26,7 +33,7 @@ header {
   transition: background 250ms ease-in;
   background: var(--background);
   color: var(--text);
-  background: #e7e7e7;
+  background: rgb(204, 209, 211);
 }
 
 .nav__list {
@@ -124,7 +131,14 @@ header {
   --background: #9ffa0c;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
+/*Slide*/
+.slidershow {
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+}
 
+/* CARD */
 .cont_card{
   display: flex;
   justify-content: center;
@@ -134,23 +148,31 @@ header {
 .card{
     background-color: rgb(208, 204, 204);
     background-color: #38CFFF;
-    width: 200px;
-    height: 500px;
+    width: 250px;
+    height: 500px;  
     margin: 30px;
     border-radius: 15px;
 }
 .card h2{
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  
+  font-size: 30px;
+  text-align: center;
 
+}
+.card p{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 25px;
+  text-align: center;
 }
 .card_imagem{
     
-    height: 150px;
+    height: 200px;
     right: 150px;
     margin-bottom: 15px;
     background-size: cover;
+
 }
+/* Beneficios */
 .Beneficio_1{
     background-image: url(/img/velocidade.jpg);
 }
@@ -163,6 +185,7 @@ header {
 .Beneficio_4{
     background-image: url(/img/helpdesk.jpg);
 }
+/* Duvida */
 .duvida_1{
   background-image: url(/img/computador.jpg);
 }
@@ -175,10 +198,19 @@ header {
 .duvida_4{
   background-image: url(/img/orçamento.png);
 }
-.cardi-5{
-    background-image: url(/img/computador.jpg);
+/* Suporte */
+.suporte_1{
+    background-image: url(/img/blender.png);
 }
-.cardi-6
+.suporte_2{
+  background-image: url(/img/maxon.png);
+}
+.suporte_3{
+  background-image: url(/img/autodesk.jpg);
+}
+.suporte_4{
+  background-image: url(/img/autodesk\ maya.jpg);
+}
 .card:hover{
     transform: scale(1.1);
 }
@@ -378,3 +410,36 @@ a {
   background-color: #00B9F3;
   color: #fff;
 }
+
+/* Empresas Parceiras */
+
+.carrossel{
+  box-shadow: 2px 2px 4px black;
+  overflow: hidden;
+  height: 500px;
+  width: 500px;
+}
+.conte_carrossel{
+  display:flex;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
+
+}
+.conte_carrossel img{
+  object-fit: cover;
+  height: 500px;
+  width: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

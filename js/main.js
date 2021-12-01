@@ -1,10 +1,21 @@
-const btnMobile=document.getElementById('btn-mobile');
+const imgs= document.getElementById("img");
+const img= document.querySelectorAll("#img img");
 
-function toggleMenu(){
-    const nav= document.getElementById('nav');
-    nav.classList.toggle('active')
+let idx=0;
+
+function carrossel(){
+    idx++;
+
+    if(idx>img.length-1){
+        idx=0;
+    }
+    
+    imgs.style.transform='translateX(${-idx*500}px)';
+
 }
 
-btnMobile.addEventListener('click', toggleMenu )
+setInterval(carrossel, 1800)
 
-// Slide Area
+
+
+
