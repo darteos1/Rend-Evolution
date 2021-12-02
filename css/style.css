@@ -148,21 +148,41 @@ header {
 .card{
     background-color: rgb(208, 204, 204);
     background-color: #38CFFF;
-    width: 250px;
-    height: 500px;  
+    width: 267px;
+    height: 540px;  
     margin: 30px;
-    border-radius: 15px;
+    border-radius: 27px;
 }
 .card h2{
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 41px;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+  /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 30px;
-  text-align: center;
+  text-align: center; */
 
 }
 .card p{
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 25px;
-  text-align: center;
+  font-family: Zilla Slab;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 36px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+  /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  text-align: center; */
 }
 .card_imagem{
     

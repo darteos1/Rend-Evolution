@@ -14,7 +14,15 @@ function carrossel(){
 
 }
 
-setInterval(carrossel, 1800)
+setInterval(carrossel, 1800);
+
+
+
+var email = document.getElementById("email")
+var senha = document.getElementById("password")
+
+
+
 
 
 
