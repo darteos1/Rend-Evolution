@@ -123,9 +123,34 @@ body {
     height: 120px;
     margin-bottom: 15px;
     background-size: cover;
+<<<<<<< Updated upstream
 }
 .cardi-1{
     background-image: url(/img/autodesk\ maya.jpg);
+=======
+
+}
+
+/* Beneficios */
+
+.Beneficio_1{
+    background-image: url(/img/velocidade.jpg);
+}
+.Beneficio_2{
+    background-image: url(/img/custo.jpg);
+}
+.Beneficio_3{
+    background-image: url(/img/terra.jpg);
+}
+.Beneficio_4{
+    background-image: url(/img/helpdesk.jpg);
+}
+
+/* Duvida */
+
+.duvida_1{
+  background-image: url(/img/computador.jpg);
+>>>>>>> Stashed changes
 }
 .cardi-2{
     background-image: url(/img/duvida.jpg);
@@ -133,12 +158,56 @@ body {
 .cardi-3{
     background-image: url(/img/globo.png);
 }
+<<<<<<< Updated upstream
 .cardi-4{
     background-image: url(/img/gaveta\ films.jpg);
+=======
+.duvida_4{
+  background-image: url(/img/orçamento.png);
+}
+
+/* Suporte */
+
+.suporte_1{
+    background-image: url(/img/blender.png);
+}
+.suporte_2{
+  background-image: url(/img/maxon.png);
+}
+.suporte_3{
+  background-image: url(/img/autodesk.jpg);
+}
+.suporte_4{
+  background-image: url(/img/autodesk\ maya.jpg);
+>>>>>>> Stashed changes
 }
 .card:hover{
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
+
+/* Demonstração */
+
+.demonstracao_1{
+  background-image: url(/img/warne\ bros.png);
+}
+.demonstracao_2{
+  background-image: url(/img/disney.png);
+}
+.demo_imagem{
+  
+  height: 20px;
+  right: 15px;
+  margin-bottom: 15px;
+ 
+
+}
+
+
+
+
+
+
+
 
 /*Footer*/
 
