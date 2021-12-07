@@ -25,5 +25,3 @@ var senha = document.getElementById("password")
 
 
 
-
-
