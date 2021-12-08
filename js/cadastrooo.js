@@ -36,7 +36,7 @@ validate(form){
  }
 }
 // verifica se um input tem um numero minimo de caracteres
- minlength(input, minValue) {
+  function minlength(input, minValue) {
     let inputLength = input.value.length;
 
     let errorMessage = `O campo precisa ter pelo menos ${minValue} caracteres`;
@@ -45,7 +45,7 @@ validate(form){
     }
 };
  // imprimir msg de erro na tela
-  printMessage(input, msg) {
+  function printMessage(input, msg) {
     let template = document.querySelector('.error-validation').cloneNode(true);
 
     template.textContent = msg;
