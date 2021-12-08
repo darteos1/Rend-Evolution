@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,39 +9,57 @@
     <link rel="stylesheet" href="css/cadastroo.css">
 </head>
 <body>
-    <div id="main-container">
-        <h1>Cadastre-se</h1>
-        <form id=register-form>
-            <div class="full-box">
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-min-length="3">
-            </div>
-            <div class="half-box spacing">
-                <label for="name">Nome</label>
-                <input type="text" name="name" id="name" placeholder="Digite o seu nome">
-            </div>
-            <div class="half-box">
-                <label for="lastname">Sobrenome</label>
-                <input type="text" name="lastname" id="lastname" placeholder="Digite o seu sobrenome">
-            </div>
-            <div class="half-box spacing">
-                <label for="password">Senha</label>
-                <input type="password" name="password" id="password" placeholder="Digite a sua senha">
-            </div>
-            <div class="half-box">
-                <label for="passconfirmation">Confirmação de senha</label>
-                <input type="password" name="passconfirmation" id="passconfirmation" placeholder="Confirme a sua senha">
-            </div>
-            <div class="full-box">
-                <input type="checkbox" name="agreement" id="agreement">
-                <label for="agreement" id="agreement">Eu li e aceito os <a href="#">termos de uso</a></label>
-            </div>
-            <div class="full-box">
-                <input type="submit" id="btn-submit" value="Registrar">
-            </div>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Cadastre-se</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome completo</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">E-mail</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <label for="telefone" class="labelInput">Telefone</label>
+                </div>
+                <p>Sexo:</p>
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <br>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <br>
+                <input type="radio" id="outro" name="genero" value="outro" required>
+                <label for="outro">Outro</label>
+                <br><br>
+                <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+                <input type="date" name="data_nascimento" id="data_nascimento" required>
+                <br><br><br>
+                <div class="inputBox">
+                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                    <label for="cidade" class="labelInput">Cidade</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="estado" id="estado" class="inputUser" required>
+                    <label for="estado" class="labelInput">Estado</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                    <label for="endereco" class="labelInput">Endereço</label>
+                </div>
+                <br><br>
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
         </form>
     </div>
-    <p class="erro-validation template"></p>
-    <script src="js/cadastrooo.js"></script>
+    
 </body>
 </html>
