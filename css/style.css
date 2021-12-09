@@ -123,11 +123,6 @@ body {
     height: 120px;
     margin-bottom: 15px;
     background-size: cover;
-<<<<<<< Updated upstream
-}
-.cardi-1{
-    background-image: url(/img/autodesk\ maya.jpg);
-=======
 
 }
 
@@ -150,7 +145,6 @@ body {
 
 .duvida_1{
   background-image: url(/img/computador.jpg);
->>>>>>> Stashed changes
 }
 .cardi-2{
     background-image: url(/img/duvida.jpg);
@@ -158,10 +152,6 @@ body {
 .cardi-3{
     background-image: url(/img/globo.png);
 }
-<<<<<<< Updated upstream
-.cardi-4{
-    background-image: url(/img/gaveta\ films.jpg);
-=======
 .duvida_4{
   background-image: url(/img/orçamento.png);
 }
@@ -179,7 +169,6 @@ body {
 }
 .suporte_4{
   background-image: url(/img/autodesk\ maya.jpg);
->>>>>>> Stashed changes
 }
 .card:hover{
   transform: scale(1.1);
