@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
   font-family: "Poppins", sans-serif;
 }
 
@@ -132,10 +134,40 @@ header {
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
 /*Slide*/
-.slidershow {
-  width: 700px;
-  height: 400px;
+.stop-scrolling {
+  height: 100%;
   overflow: hidden;
+}
+
+#items-wrapper {
+  margin-top: 130px;
+  width: 100vw;
+}
+
+#items { 
+  display: flex; 
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  /* -webkit-overflow-scrolling: touch; */
+  scroll-behavior: smooth;
+} 
+
+.item {
+  flex: none;
+
+  width: 100%;
+  height: 320px;
+  scroll-snap-align: start;
+
+  pointer-events: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+
+  /* object-fit: cover; */
 }
 
 /* CARD */
