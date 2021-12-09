@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/styleCalc.css" >
+    <title>Calculadora</title>
+</head>
+<body>
+    
+    <div class="titulos">
+        <h1>Calculadora</h1>
+      </div>
+      
+      <section class="calculadora">
+
+        <!-- 1° parte  -->
+
+        <form class="forms">
+          <h3>1° CPU ou GPU</h3>
+            <table>
+                <tbody id="calc_cpugpu">
+                <tr>
+                    <td> <input class="css-checkbox" type="radio" name="cpugpu" value="cpu" id="cpu">
+                    <label class="css-label" for="cpu">CPU</label></td>
+                    
+                    <td><input class="css-checkbox" type="radio" name="cpugpu" value="gpu" id="gpu" onclick="#">
+                    <label class="css-label" for="gpu">GPU</label></td>
+                </tr>
+                </tbody>
+            </table>
+           
+            
+            </div>
+        </form>
+    <!-- 2° parte -->
+    
+    <form class="forms">
+
+        <h3>2° Sofware Usado</h3>
+
+        <div class="section">
+            
+
+          <div class="control-group">   
+            <label class="control-label">Aplicativo 3D</label>
+            <select class="control">
+                <option value="autodesk_3ds">Autodesk 3ds Max</option>
+                <option value="Maxon">Maxon Cinema 4D</option>
+                <option value="Autodesk_Maya">Autodesk Maya</option>
+                <option value="Foundry">Foundry Modo</option>
+                <option value="Blender">Blender</option>
+                <option value="Newtek">Newtek Lightwave 3D</option>
+                <option value="Autodesk_Softimage">Autodesk Softimage</option>
+                <option value="SketchUp">SketchUp</option>
+                <option value="Rhinoceros">Rhinoceros Rhino</option>
+                <option value="Autodesk_Revit">Autodesk Revit</option>
+                <option value="Standalone">Standalone Software</option>
+            </select>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Renderização</label>
+            <select class="control">
+                <option value="Standard_Renderer">Standard Renderer</option>
+                <option value="V-Ray">V-Ray</option>
+            </select>
+          </div>
+          <span>R$ 7.65/ GHzh </span>
+      
+        </div>
+
+          
+
+
+<!-- ==================================================== -->
+
+
+          <!-- <form class="form">
+            <div class="section">
+              <div class="control-group">
+                <label class="control-label">Selecione algo</label>
+                <select class="control">
+                      <option disabled>Selecione Algo</option>
+                </select>
+              </div>
+          
+              <div class="control-group">
+                <label class="control-label">Escreva algo</label>
+                <input type="text" class="control"/>
+              </div>
+          
+            </div>
+          
+            <div class="section">
+              <div class="control-group">
+                <label class="control-label">Escreva algo</label>
+                <input type="text" class="control"/>
+              </div>
+          
+              <div class="control-group">
+                <label class="control-label">Marque algo</label>
+                <label>
+                  <input type="checkbox"/>
+                  Concordo (checkbox)
+                </label>
+              </div>
+          
+            </div>
+          </form> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        <!-- <div class="calc_software_usado">
+            <h3>2° Sofware Usado</h3>
+        
+            <div class="Aplicativo_3D">
+                
+                <h3>Aplicativo 3D</h3>
+    
+                <select class="calc_software_usado_option">
+        
+                <option value="autodesk_3ds">Autodesk 3ds Max</option>
+                <option value="Maxon">Maxon Cinema 4D</option>
+                <option value="Autodesk_Maya">Autodesk Maya</option>
+                <option value="Foundry">Foundry Modo</option>
+                <option value="Blender">Blender</option>
+                <option value="Newtek">Newtek Lightwave 3D</option>
+                <option value="Autodesk_Softimage">Autodesk Softimage</option>
+                <option value="SketchUp">SketchUp</option>
+                <option value="Rhinoceros">Rhinoceros Rhino</option>
+                <option value="Autodesk_Revit">Autodesk Revit</option>
+                <option value="Standalone">Standalone Software</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label">Selecione algo</label>
+                <select class="control">
+                    <option value="Standard_Renderer">Standard Renderer</option>
+                    <option value="V-Ray">V-Ray</option>
+                </select>
+              </div>
+
+
+
+
+              
+          <form class="form">
+            <div class="section">
+              <div class="control-group">
+                <label class="control-label">Selecione algo</label>
+                <select class="control">
+                      <option disabled>Selecione Algo</option>
+                </select>
+              </div>
+    
+          <h3>Renderizador</h3>
+    
+          <select name="calc_software_usado_option">
+    
+            <option value="Standard_Renderer">Standard Renderer</option>
+            <option value="V-Ray">V-Ray</option>
+          
+    
+          </select>
+        </div> -->
+      
+        </div>
+    </form>
+    <!-- 3° parte -->
+      <form class="forms">
+        <h3>3° Dados do Projeto</h3>
+    
+        <table>
+          <tbody id="calc_myproject">
+    
+            <tr>
+              <td class="calc_project_cell_left" id="myproject_td">
+    
+                <input class="css-checkbox" type="radio" name="myproject" value="animation" id="animation"/>
+                <label class="css-label" for="animation">Animação</label>
+    
+              </td>
+          
+              <td id="single_selector">
+    
+                <input class="css-checkbox" type="radio" name="myproject" value="singleframe" id="singleframe" />
+                <label class="css-label" for="singleframe">Frame Único</label>
+    
+              </td>                    
+            </tr>
+          </tbody>
+        </table>
+    
+      <table id="calc_animation" class="calc_table">
+        <tbody>
+          <tr>
+            <td class="calc_project_cell_left">
+    
+              <label for="frames" id="frameslabel">Frames</label>			
+    
+            </td>		
+            <td>
+    
+              <input type="text" name="frames" id="frames" />
+              
+            </td>		
+          </tr>
+          <tr>
+            <td class="calc_project_cell_left">
+    
+              <label for="rendertime">Tempo de renderização</label>		
+    
+            </td>
+            <td>
+    
+              <input type="text" name="rendertime" id="rendertime"  />
+              <span> minutos por frame em seu computador</span>
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+      <table id="calc_singleimage" class="calc_table">
+        <tbody>
+          <tr>
+            <td colspan="2" class="calc_project_cell_left">	
+    
+              <label id="singelframelabel"><br><br><br>RENDERIZE UMA ÚNICA IMAGEM DISTRIBUÍDA</label>	
+    
+            </td>	
+          </tr>
+    
+          <td class="calc_project_cell_left_single">
+              <label for="rendertime">Resolução base</label>						
+            </td>
+            <td>
+              <input type="text" name="single_source_x" id="single_source_x" class="calc_table_small_input" />
+              <span>x </span>
+    
+              <input type="text" name="single_source_y" id="single_source_y" class="calc_table_small_input"  />
+              <span> no seu computador</span>
+    
+            </td>
+          <tr>
+            <td class="calc_project_cell_left_single">
+              <label for="rendertime">Tempo de renderização</label>						
+            </td>
+            <td>
+              <input type="text" name="rendertime_single" id="rendertime_single" class="calc_table_small_input"  />
+              <span> minutos no seu computador</span>
+    
+            </td>
+          </tr>
+         
+          <tr>
+            <td class="calc_project_cell_left_single">
+              <label for="rendertime">Resolução desejada</label>						
+            </td>
+            <td>
+              <input type="text" name="single_target_x" id="single_target_x" class="calc_table_small_input" />
+              <span>x </span>
+              <input type="text" name="single_target_y" id="single_target_y" class="calc_table_small_input" />
+              <span> na Rend Evolution</span>
+            </td>
+          </tr>
+        </tbody>
+        </div>
+      </table>
+      </form>
+    <!-- 4° parte -->
+    <form class="forms">
+          <h3>4° Escolha de Hardware  </h3>
+            </div>
+    
+            Calcule com a minha		<table id="tbl_pickworkstation">
+                <tbody id="pick_myworkstation">
+                    <tr>
+                        <td>
+                            <input class="css-checkbox" type="radio" name="cbOrWorkstation" value="workstation" id="cbOrWorkstation_workstation" />
+                            <label class="css-label" for="cbOrWorkstation_workstation">
+                                Tipo de CPU						</label>
+                        </td>
+                        <td>
+                            <input class="css-checkbox" type="radio" name="cbOrWorkstation" value="cinebench" id="cbOrWorkstation_cinebench" />
+                            <label class="css-label" for="cbOrWorkstation_cinebench">Cinebench</label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table id="tbl_myworkstation">
+                <tbody id="calc_myworkstation">
+            <div class="is">
+                    <th>Marca
+            
+        <select name="carros">
+            <option value="volvo">Volvo</option>
+            <option value="BMW">BMW</option>
+            <option value="FIAT">FIAT</option>
+            <option value="volvo">Volvo</option>
+    
+        </select>
+    </div>
+    </th>
+                    <th>Modelo</th>
+                    <th>Tipo</th>
+                    <th>GHz</th>
+                    <th>Núcleos</th>
+                    <th>#CPU</th>
+    *
+                    
+                </tbody>
+            </table>
+        </div>
+    </form>
+    
+    
+    
+    
+    
+    <p>Primeiro Número</p>
+        <input id="n1" type="number"><br>
+    
+        <p>Segundo Número</p>
+        <input id="n2" type="number"><br>
+    
+        <button onclick="somar()">Somar</button>
+        <button onclick="subtrair()">Subtrair</button>
+        <button onclick="multiplicar()">Multiplicar</button>
+        <button onclick="dividir()">Dividir</button>
+        <br><br>
+        O Resultado é <span>  </span>
+    
+    
+      </section>
+
+      <form class="form">
+        <div class="section">
+          <div class="control-group">
+            <label class="control-label">Selecione algo</label>
+            <select class="control">
+                  <option disabled>Selecione Algo</option>
+            </select>
+          </div>
+      
+          <div class="control-group">
+            <label class="control-label">Escreva algo</label>
+            <input type="text" class="control"/>
+          </div>
+      
+        </div>
+      
+        <div class="section">
+          <div class="control-group">
+            <label class="control-label">Escreva algo</label>
+            <input type="text" class="control"/>
+          </div>
+      
+          <div class="control-group">
+            <label class="control-label">Marque algo</label>
+            <label>
+              <input type="checkbox"/>
+              Concordo (checkbox)
+            </label>
+          </div>
+      
+        </div>
+      </form>
+      
+
+
+
+</body>
+</html>

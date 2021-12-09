@@ -5,6 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--faz o site ocupar todo o espaço disponível na janela, seja em celulares, tablets ou PC’s-->
   <title>Rend Evolution</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css" >
+  <link rel="stylesheet" type="text/css" href="./css/BeerSlider.css" >
+  <script src="/js/BeerSlider.js"></script>
+
+  
   <link rel="shortcut icon" href="img/REND_EVOLUTION-removebg-preview.png" type="image/x-icon">
 
   <link rel="stylesheet" type="text/css" href="./css/style.css">
@@ -109,35 +114,12 @@
     </div>
   </section>
   
-  <!--Calculadora-->
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <h1 align="center">--Calculadora-- </h1>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+
   <!--Aplicativos com Suporte-->
+
+  <div class="titulos">
+    <h1>Aplicativos com Suporte</h1>
+    </div>
   <section class="cont_card">
   <div class="card">
     <div class="card_imagem suporte_1"></div>
@@ -161,79 +143,99 @@
   </div>
   </section>
   <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+
   <!--Demonstração-->
+
   <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <h1 align="center">Demonstração </h1>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  <div class="titulos">
+    <h1>Demonstração</h1>
+    </div>
+  <div class="container_demo">
+
+    <div id="compare" class="beer-slider" data-beer-label="Concorrência">
+      <img src="/img/demonstra4kDesfocada.PNG" alt="">
+      <div class="beer-reveal" data-beer-label="Rend Evolution">
+        <img src="/img/demonstra4k.jpg" alt="">
+      </div>
+    </div>
+  </div>
   <br>
   <br>
   <br>
   <br>
   <!--Empresas Parceiras-->
+  
+<div class="titulos">
+    <h1>Empresas Parceiras</h1>
+    </div>
   <br>
   <br>
   <br>
-  <br>
-  <br>
-  <br>
-  <h1 align="center">Empresas Parceiras-- </h1>
-  <br>
-  <br>
-  <br>
-  <div class="carrossel">
-    <div class="conte_carrossel" id="img">
-      <img src="img/chat.png" alt="#">
-      <img src="img/chat.png" alt="#">
-      <img src="img/chat.png" alt="#">
-      <img src="img/chat.png" alt="#">
+<section>
+  <div class="slider">
+    <div class="slide-track">
+      <div class="slide">
+        <img src="/img/netflixPNG.png">
+      </div>
+      <div class="slide">
+        <img src="/img/warnebrossPNG.png">
+      </div>
+      <div class="slide">
+        <img src="/img/GloboPNG.png">
+      </div>
+      <div class="slide">
+        <img src="/img/nickelodeonPNG.png">
+      </div>
+      <div class="slide">
+        <img src="/img/cartoonnetworkPNG.png">
+      </div>
+      <div class="slide">
+        <img src="/img/pixarPNG.png">
+      </div>
+      <div class="slide">
+        <img src="/img/disney.png">
+      </div>
+      <div class="slide">
+        <img src="/img/ParamountPNG.png">
+      </div>
+      <div class="slide">
+        <img src="/img/dreamworksPNG.png">
+      </div>
 
+      <!-- mais 9 slides -->
+
+      <div class="slide">
+        <img src="/img/netflixPNG.png">
+      </div>
+      <div class="slide">
+        <img src="/img/warnebrossPNG.png">
+      </div>
+      <div class="slide">
+        <img src="/img/GloboPNG.png">
+      </div>
+      <div class="slide">
+        <img src="/img/nickelodeonPNG.png">
+      </div>
+      <div class="slide">
+        <img src="/img/cartoonnetworkPNG.png">
+      </div>
+      <div class="slide">
+        <img src="/img/pixarPNG.png">
+      </div>
+      <div class="slide">
+        <img src="/img/disney.png">
+      </div>
+      <div class="slide">
+        <img src="/img/ParamountPNG.png">
+      </div>
+      <div class="slide">
+        <img src="/img/dreamworksPNG.png">
+      </div>
 
     </div>
   </div>
-      <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+</section>
+
   <br>
   <br>
   <br>
@@ -280,5 +282,10 @@
 </footer>
 
 <script src="./js/main.js"></script>
+
+<script>
+  new BeerSlider(document.getElementById('compare'));
+</script>
+
 </body>
 </html>

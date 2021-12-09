@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+.calculadora{
+    color: red;
+    font-size: 15px;
+    align-items: center;
+}
+#calc_cpugpu{
+    color: green;
+    display: flex;
+    align-items: center ;
+}
+
+
+/*  */
+.forms h3 {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    max-height: auto;
+    max-width: auto;
+    background-color: rgb(121, 118, 118);
+    color: rgb(226, 227, 238);
+    font-size: 30px;
+  }
+
+  
+  .forms .section {
+    flex-grow: 1;
+   
+    padding: 30px;
+    display: flex;
+    justify-content: space-between; /*Alinhou os select um do lado do outro*/
+    
+    
+  }
+  
+  .forms .section .control-group {
+    margin-top: 0px;
+  }
+  
+  .forms .section .control-group .control {
+    width: 100%;
+  }
+  
+  
+  .forms .section .control-group .control-label {
+    display: block;
+    width: 100%;
+    margin-bottom: 4px;
+  }
+  .forms .section span{
+      color: red;
+      margin-top: 50px;
+      margin-right: 100px ;
+  }
