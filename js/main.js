@@ -1,22 +1,4 @@
-const imgs= document.getElementById("img");
-const img= document.querySelectorAll("#img img");
-
-let idx=0;
-
-function carrossel(){
-    idx++;
-
-    if(idx>img.length-1){
-        idx=0;
-    }
-    
-    imgs.style.transform='translateX(${-idx*500}px)';
-}
-
-setInterval(carrossel, 1800);
-
-var email = document.getElementById("email")
-var senha = document.getElementById("password")
+new BeerSlider(document.getElementById('compare'));
 
 // Slider
 function disableScroll() {
