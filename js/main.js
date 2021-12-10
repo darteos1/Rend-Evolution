@@ -1,4 +1,22 @@
-new BeerSlider(document.getElementById('compare'));
+const imgs= document.getElementById("img");
+const img= document.querySelectorAll("#img img");
+
+let idx=0;
+
+function carrossel(){
+    idx++;
+
+    if(idx>img.length-1){
+        idx=0;
+    }
+    
+    imgs.style.transform='translateX(${-idx*500}px)';
+}
+
+setInterval(carrossel, 1800);
+
+var email = document.getElementById("email")
+var senha = document.getElementById("password")
 
 // Slider
 function disableScroll() {
@@ -50,3 +68,5 @@ function multiplicar(){
 function dividir(){
     resultado.innerHTML= parseFloat(n1.value) / parseFloat(n2.value)
 }
+
+new BeerSlider(document.getElementById('compare'))
