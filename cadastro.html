@@ -25,6 +25,11 @@
                 </div>
                 <br><br>
                 <div class="inputBox">
+                    <input type="password" name="password" id="password" class="inputUser" required>
+                    <label for="password" class="labelInput">Senha</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
                     <input type="tel" name="telefone" id="telefone" class="inputUser" required>
                     <label for="telefone" class="labelInput">Telefone</label>
                 </div>
@@ -37,10 +42,15 @@
                 <br>
                 <input type="radio" id="outro" name="genero" value="outro" required>
                 <label for="outro">Outro</label>
-                <br><br>
+                <br>
                 <label for="data_nascimento"><b>Data de Nascimento:</b></label>
                 <input type="date" name="data_nascimento" id="data_nascimento" required>
-                <br><br><br>
+                <br><br>
+                <div class="inputBox">
+                    <input name="cep" type="text" id="cep" class="inputUser" required size="10" maxlength="9" onblur="pesquisacep(this.value);" />
+                    <label for="cep" class="labelInput">Cep</label><br/>
+                </div>
+                <br>
                 <div class="inputBox">
                     <input type="text" name="cidade" id="cidade" class="inputUser" required>
                     <label for="cidade" class="labelInput">Cidade</label>
@@ -55,11 +65,12 @@
                     <input type="text" name="endereco" id="endereco" class="inputUser" required>
                     <label for="endereco" class="labelInput">Endereço</label>
                 </div>
-                <br><br>
+                <br>
                 <input type="submit" name="submit" id="submit">
             </fieldset>
         </form>
     </div>
+    <link rel="stylesheet" href="js/cadastrooo.js">
     
 </body>
 </html>
