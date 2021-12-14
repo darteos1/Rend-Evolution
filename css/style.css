@@ -231,42 +231,42 @@ color: #000000;
 }
 /* Beneficios */
 .Beneficio_1{
-  background-image: url(../img/velocidade.jpg);
+  background-image: url(../img/velocidadee.png);
 }
 .Beneficio_2{
-  background-image: url(../img/custo.jpg);
+  background-image: url(../img/custos.png);
 }
 .Beneficio_3{
-  background-image: url(../img/terra.jpg);
+  background-image: url(../img/qualquerlugar.png);
 }
 .Beneficio_4{
-  background-image: url(../img/helpdesk.jpg);
+  background-image: url(../img/help\ desk.png);
 }
 /* Duvida */
 .duvida_1{
-  background-image: url(../img/computador.jpg);
+  background-image: url(../img/renderemnuvem.png);
 }
 .duvida_2{
-  background-image: url(../img/duvida.jpg);
+  background-image: url(../img/document.png);
 }
 .duvida_3{
-  background-image: url(../img/hacker.jpg);
+  background-image: url(../img/precisoserti.png);
 }
 .duvida_4{
-  background-image: url(../img/orçamento.png);
+  background-image: url(../img/p4c.png);
 }
 /* Suporte */
 .suporte_1{
-  background-image: url(../img/blender.png);
+  background-image: url(../img/blenderrrr.png);
 }
 .suporte_2{
-  background-image: url(../img/maxon.png);
+  background-image: url(../img/maxoncinema.png);
 }
 .suporte_3{
-  background-image: url(../img/autodesk.jpg);
+  background-image: url(../img/autodesk3.png);
 }
 .suporte_4{
-  background-image: url(../img/autodesk_maya.jpg);
+  background-image: url(../img/autodeskmaia.png);
 }
 .card:hover{
   transform: scale(1.1);
