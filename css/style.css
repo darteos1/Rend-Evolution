@@ -1,21 +1,25 @@
 body {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+ 
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
-  /* background-color: rgb(86, 170, 219); */
+  
 }
 
 #items::-webkit-scrollbar {
   display: none;
 }
 
-.site-logo {
-  font-weight: 900;
-  font-size: 3rem;
-  color: var(--text);
-  text-decoration: none;
+
+.logo{
+  max-width: 150px;
+  max-height: 68px;
+  width: 10%;
+  height: 70%;
+  left: 40px;
+  align-items: center;
+  display: flex;
 }
 
 .titulos h1{
@@ -50,6 +54,7 @@ header {
   padding: 0;
   display: flex;
 }
+
 
 .nav__link {
   --spacing: 1em;
@@ -120,26 +125,19 @@ header {
 .nav__link--btn--highlight::after {
   display: none;
 }
-
-/* .nav__link--btn--highlight {
-  background: limegreen;
-  border-color: limegreen;
-  color: #333;
-}
-
-.nav__link--btn--highlight:hover {
-  background: var(--text);
-  border-color: var(--text);
-}
-*/
-
 .nav-scrolled {
   --text: #333;
   --text-inverse: #e91212;
   --background: #9ffa0c;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
-/*Slide*/
+
+
+
+/*Slide ==================== SLIDE  ================= SLIDE  ================== SLIDE   ======================  SLIDE  =====================  SLIDE========================*/
+
+
+
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
@@ -155,7 +153,7 @@ header {
 
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  /* -webkit-overflow-scrolling: touch; */
+  
   scroll-behavior: smooth;
 } 
 
@@ -173,10 +171,13 @@ img {
   width: 100%;
   height: 100%;
 
-  /* object-fit: cover; */
+  
 }
 
-/* CARD */
+
+/* CARD ======================  CARD  =======================   CARD  =================  CARD  ====================  CARD  ====================== CARD ================*/
+
+
 .cont_card{
   display: flex;
   justify-content: center;
@@ -202,10 +203,6 @@ text-align: center;
 
 color: #000000;
 
-  /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 30px;
-  text-align: center; */
-
 }
 .card p{
   font-family: Zilla Slab;
@@ -218,9 +215,7 @@ align-items: center;
 text-align: center;
 
 color: #000000;
-  /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 20px;
-  text-align: center; */
+ 
 }
 .card_imagem{  
   height: 200px;
@@ -229,7 +224,11 @@ color: #000000;
   background-size: cover;
 
 }
-/* Beneficios */
+
+
+/* Beneficios =======================  Beneficios  ========================  Beneficios  ==============================  Beneficios  ===================  Beneficios ========*/
+
+
 .Beneficio_1{
   background-image: url(../img/velocidadee.png);
 }
@@ -242,7 +241,11 @@ color: #000000;
 .Beneficio_4{
   background-image: url(../img/help\ desk.png);
 }
-/* Duvida */
+
+
+/* Duvida ========================  Duvida  =========================    Duvida   ====================================     Duvida    =======================================*/
+
+
 .duvida_1{
   background-image: url(../img/renderemnuvem.png);
 }
@@ -255,7 +258,11 @@ color: #000000;
 .duvida_4{
   background-image: url(../img/p4c.png);
 }
-/* Suporte */
+
+
+/* Suporte =============================  Suporte  ===================================  Suporte  ==========================  Suporte  ====================================== */
+
+
 .suporte_1{
   background-image: url(../img/blenderrrr.png);
 }
@@ -272,7 +279,99 @@ color: #000000;
   transform: scale(1.1);
 }
 
-/*Footer*/
+
+
+
+/* Demonstração ====================  Demonstração  ==================   Demonstração   ========================   Demonstração   ===========================  Demonstração  === */
+
+
+.container_demo{
+  display: flex;
+  max-width: 1360px;
+  max-height: 490px;
+  margin:0 auto;
+  padding: 0 .75rem;
+}
+.beer-slide[data-beer-label]:after,
+.beer-reveal[data-beer-label]:after{
+  color: #333;
+  text-transform: uppercase; font-size: 0.75rem;
+  font-weight: bold;
+}
+.beer-slider{
+  box-shadow: 0 12px 16px -8 black;
+}
+
+
+
+
+/* Empresas Parceiras =========================  Empresas Parceiras  ==========================  Empresas Parceiras  =====================  Empresas Parceiras  ===============*/
+
+
+.slider{
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.slide-track{
+  display: flex;
+  width: calc(250px * 18);
+  animation: scroll 40s linear infinite;
+}
+.slide-track:hover{
+  animation-play-state: paused;
+}
+@keyframes scroll{
+  0%{
+    transform:translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  }
+}
+.slide{
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+}
+img{
+  width: 100%;
+  transition: transform 1s;
+}
+img:hover{
+transform: translateZ(20px);
+}
+
+/* sombras */
+
+.slider::before,
+.slider::after{
+  background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255,255,255,0) 100%);
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 5%;
+  z-index: 2;
+}
+.slider::before{
+  left: 0;
+  top: 0;
+}
+.slider::after{
+  right:0 ;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+
+/*Footer  =========================  Footer  ===================================  Footer  ================================  Footer  ====================  Footer  ============*/
 
 *,
 *::before,
@@ -467,93 +566,6 @@ a {
   background-color: #00B9F3;
   color: #fff;
 }
-/* Demonstração */
-
-.container_demo{
-  max-width: 960px;
-  max-height: 860px;
-  margin:0 auto;
-  padding: 0 .75rem;
-}
-.beer-slide[data-beer-label]:after,
-.beer-reveal[data-beer-label]:after{
-  color: #333;
-  text-transform: uppercase; font-size: 0.75rem;
-  font-weight: bold;
-}
-.beer-slider{
-  box-shadow: 0 12px 16px -8 black;
-}
-
-
-
-
-/* Empresas Parceiras */
-
-.slider{
-  height: 250px;
-  margin: auto;
-  position: relative;
-  width: 90%;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-}
-.slide-track{
-  display: flex;
-  width: calc(250px * 18);
-  animation: scroll 40s linear infinite;
-}
-.slide-track:hover{
-  animation-play-state: paused;
-}
-@keyframes scroll{
-  0%{
-    transform:translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-250px * 9));
-  }
-}
-.slide{
-  height: 200px;
-  width: 250px;
-  display: flex;
-  align-items: center;
-  padding: 15px;
-  perspective: 100px;
-}
-img{
-  width: 100%;
-  transition: transform 1s;
-}
-img:hover{
-transform: translateZ(20px);
-}
-
-/* sombras */
-
-.slider::before,
-.slider::after{
-  background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255,255,255,0) 100%);
-  content: '';
-  height: 100%;
-  position: absolute;
-  width: 5%;
-  z-index: 2;
-}
-.slider::before{
-  left: 0;
-  top: 0;
-}
-.slider::after{
-  right:0 ;
-  top: 0;
-  transform: rotateZ(180deg);
-}
-
-
-
 
 
 
