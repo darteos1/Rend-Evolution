@@ -16,34 +16,39 @@
 
   <!--Menu ===============  Menu  =========================  Menu  ====================================  Menu  =======================  Menu  ==============================-->
 
-  <header>
-    <div class="logo">
+  
+  <header id="header">
+      <div class="logo">
 
-      <img src="../img/REND_EVOLUTION-removebg-preview.png" class="media-object  img-responsive img-thumbnail"> 
-    
-    </div>
+        <img src="../img/REND_EVOLUTION-removebg-preview.png" class="media-object  img-responsive img-thumbnail"> 
+      
+      </div>
+      <nav id="nav">
 
-    <nav class="main-nav">
-      <ul class="nav__list"> 
-        <li class="nav__list-item"><a href="#" class="nav__link">Home</a></li>
-        <li class="nav__list-item"><a href="#" class="nav__link">Quem Somos</a></li>
-        <li class="nav__list-item"><a href="#" class="nav__link">Projetos</a></li>
-        <li class="nav__list-item"><a href="#" class="nav__link">Preço</a></li>
-        <li class="nav__list-item"><a href="#" class="nav__link">Suporte</a></li>
-      </ul>
-    </nav>
-    
-    <nav class="account">
-      <ul class="nav__list">
-        <li class="nav__list-item">
-          <a class="nav__link nav__link--btn" href="login.html" target="_blank">Login</a>
-        </li>
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+          <span id="hamburger"></span>
+        </button>
 
-        <li class="nav__list-item">
-          <a class="nav__link nav__link--btn nav__link--btn--highlight" href="../html/cadastro.html" target="_blank">Cadastro</a>
-        </li>
-      </ul>
-    </nav>
+        <ul id="menu" role="menu">
+
+          <li><a href="#" class="nav__link">Home</a></li>
+          <li><a href="#" class="nav__link">Quem Somos</a></li>
+          <li><a href="#" class="nav__link">Projetos</a></li>
+          <li><a href="#" class="nav__link">Preço</a></li>
+          <li><a href="#" class="nav__link">Suporte</a></li>
+        
+        </ul>
+
+        <ul id="nav__list">
+          <li class="nav__list-item">
+            <a class="nav__link nav__link--btn" href="login.html" target="_blank">Login</a>
+          </li>
+  
+          <li class="nav__list-item">
+            <a class="nav__link nav__link--btn nav__link--btn--highlight" href="../html/cadastro.html" target="_blank">Cadastro</a>
+          </li>
+
+      </nav>
   </header>
   
 <main>
@@ -73,22 +78,23 @@
 
   <section class="cont_card">
     <div class="card">
-      <div class="card_imagem Beneficio_1"></div>
+      <div class="card_imagem1" id="card-1"><img src="../img/velocidadee.png"> </div>
+      
       <h2>Velocidade</h2>
       <p>Utilizandomos os melhores hardware para oferecer qualidade e agilidade.</p>
     </div>
-    <div class="card">
-      <div class="card_imagem Beneficio_2"></div>
+    <div class="card" >
+      <div class="card_imagem2" id="card-2"><img src="../img/custos.png" /></div>
       <h2>Custo</h2>
       <p>Com nossa operação 100% brasileira conseguimes oferecer preços acessíveis.</p>
     </div>
-    <div class="card">
-      <div class="card_imagem Beneficio_3"></div>
+    <div class="card" id="card-3">
+      <div class="card_imagem"><img src="../img/qualquerlugar.png" /></div>
       <h2>Qualquer lugar</h2>
       <p>Nossa plataforma pode ser acessada em qualquer local do mundo.</p>
     </div>
-    <div class="card">
-      <div class="card_imagem Beneficio_4"></div>
+    <div class="card" id="card-4">
+      <div class="card_imagem"><img src="../img/help desk.png" /></div>
       <h2>Help Desk</h2>
       <p>Nossa equipe dedicada para lhe ajudar 24h por dia, 7 dias por semana.</p>
     </div>
@@ -103,22 +109,22 @@
     </div>
   <section class="cont_card">
     <div class="card">
-      <div class="card_imagem duvida_1"></div>
+      <div class="card_imagem "><img src="../img/renderemnuvem.png"" ></div>
       <h2> Como funciona?</h2>
       <p>Você nos envia seu arquivo bruto e nós fazer o trabalho de processar e renderiza-lo.</p>
     </div>
     <div class="card">
-      <div class="card_imagem duvida_2"></div>
+      <div class="card_imagem duvida_2"><img src="../img/document.png" /></div>
       <h2>Como eu envio meus arquivos?</h2>
       <p>Basta acessar a parte de Projetos e fazer upload dos arquivos.</p>
     </div>
     <div class="card">
-      <div class="card_imagem duvida_3"></div>
+      <div class="card_imagem duvida_3"><img src="../img/precisoserti.png" /></div>
       <h2>Preciso ser o bruxo em T.I.?</h2>
       <p>Não, a nossa área de projetos é simples, didatica e conta com um tutorial rápido e completo.</p>
     </div>
     <div class="card">
-      <div class="card_imagem duvida_4"></div>
+      <div class="card_imagem duvida_4"><img src="../img/p4c.png" /></div>
       <h2>P4C? Como funciona?</h2>
       <p>Você só paga  o que usar, então antes de iniciar  é passado um orçamento completo.</p>
     </div>
@@ -133,22 +139,22 @@
     </div>
   <section class="cont_card">
   <div class="card">
-    <div class="card_imagem suporte_1"></div>
+    <div class="card_imagem"><img src="../img/blenderrrr.png" /></div>
     <h2>Blender</h2>
     <p>O Blender é um software de criação 3D  gratuito, com um grande número de versões como os renderizadores Cycles CPU, Cycles GPU e EEVEE.</p>
   </div>
   <div class="card">
-    <div class="card_imagem suporte_2"></div>
+    <div class="card_imagem"><img src="../img/maxoncinema.png" /></div>
     <h2>Maxon Cinema</h2>
     <p>Cinema 4D é um dos softwares 3D mais populares, usado na área de motion graphics, design arquitetônico, visualização de produto, VFX e muitos mais.</p>
   </div>
   <div class="card">
-    <div class="card_imagem suporte_3"></div>
+    <div class="card_imagem"><img src="../img/autodesk3ds.png" /></div>
     <h2>Autodesk 3ds Max</h2>
     <p>O Autodesk 3ds Max é um software de computação gráfica 3D usado nas áreas de arquitetura, mídia, VFX e outras indústrias.</p>
   </div>
   <div class="card">
-    <div class="card_imagem suporte_4"></div>
+    <div class="card_imagem"><img src="../img/autodeskmaia.png" /></div>
     <h2>Autodesk Maya</h2>
     <p>O Autodesk Maya é o software 3D líder para animações, séries de TV, videogame, efeitos visuais, entre outros.</p>
   </div>
