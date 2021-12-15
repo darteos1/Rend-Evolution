@@ -1,26 +1,19 @@
-body {
-  margin: 0;
-  padding: 0;
- 
-  font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
-}
+
 
 .logo{
-  max-width: 170px;
-  max-height: 68px;
-  width: 100%;
-  height: 70%;
-  left: 40px;
-  align-items: center;
-  display: flex;
+  max-width: 170px;         /*Estabelece a largura máxima*/
+  max-height: 68px;         /*Estabelece a Altura máxima*/
+  width: 100%;              /*Largura*/
+  height: 70%;              /*Altura*/
+  left: 40px;               /*Esquerda*/
+  align-items: center;      /*Alinha os itens (centro)*/
+  display: flex;            /*Defini como um elemento HTML será renderizado(Flex= Adaptativo)*/
 }
 
 .titulos h1{
-  font-size: 50px;
-  text-align: center;
-  padding: 15px;
-  margin: 30px;
+  font-size: 50px;          /*Tamanho da fonte*/
+  text-align: center;       /*Alinha os itens (centro)*/           
+  margin: 30px;             /*Área de margem nos quatro lados do elemento*/
 }
   
 
@@ -29,11 +22,9 @@ body {
 
 
 #header {
-  box-sizing: border-box;
-  --text: #01f8ec;
-  
- 
-  position: fixed;
+  box-sizing: border-box;               /**/
+  --text: #01f8ec;                    /**/
+  position: fixed;                      /**/
   top: 0;
   left: 0;
   right: 0;
