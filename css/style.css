@@ -4,15 +4,10 @@ body {
  
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
-  
 }
-#items::-webkit-scrollbar {
-  display: none;
-}
-
 
 .logo{
-  max-width: 200px;
+  max-width: 170px;
   max-height: 68px;
   width: 100%;
   height: 70%;
@@ -243,19 +238,14 @@ body {
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
 
-
-
 /*Slide ==================== SLIDE  ================= SLIDE  ================== SLIDE   ======================  SLIDE  =====================  SLIDE========================*/
-
-
-
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
 }
 
 #items-wrapper {
-  margin-top: 130px;
+  margin-top: 132px;
   width: 100vw;
 }
 
@@ -267,6 +257,10 @@ body {
   
   scroll-behavior: smooth;
 } 
+
+#items::-webkit-scrollbar {
+  display: none;
+}
 
 .item {
   flex: none;
@@ -282,9 +276,8 @@ img {
   width: 100%;
   height: 100%;
 
-  
+  object-fit: cover;
 }
-
 
 /* CARD ======================  CARD  =======================   CARD  =================  CARD  ====================  CARD  ====================== CARD ================*/
 
