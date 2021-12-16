@@ -1,19 +1,19 @@
 
 
 .logo{
-  max-width: 170px;         /*Estabelece a largura máxima*/
-  max-height: 68px;         /*Estabelece a Altura máxima*/
-  width: 100%;              /*Largura*/
-  height: 70%;              /*Altura*/
-  left: 40px;               /*Esquerda*/
-  align-items: center;      /*Alinha os itens (centro)*/
-  display: flex;            /*Defini como um elemento HTML será renderizado(Flex= Adaptativo)*/
+  max-width: 170px;                       /*Estabelece a largura máxima*/
+  max-height: 68px;                       /*Estabelece a Altura máxima*/
+  width: 100%;                            /*Largura*/
+  height: 70%;                            /*Altura*/
+  left: 40px;                             /*Esquerda*/
+  align-items: center;                    /*Alinha os itens (centro)*/
+  display: flex;                          /*Defini como um elemento HTML será renderizado(Flex= Adaptativo)*/
 }
 
 .titulos h1{
-  font-size: 50px;          /*Tamanho da fonte*/
-  text-align: center;       /*Alinha os itens (centro)*/           
-  margin: 30px;             /*Área de margem nos quatro lados do elemento*/
+  font-size: 50px;                        /*Tamanho da fonte*/
+  text-align: center;                     /*Alinha os itens (centro)*/           
+  margin: 30px;                           /*Área de margem nos quatro lados do elemento(Espaçamento fora da borda)*/
 }
   
 
@@ -22,81 +22,77 @@
 
 
 #header {
-  box-sizing: border-box;               /**/
-  --text: #01f8ec;                    /**/
-  position: fixed;                      /**/
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-  padding: 2em 3em;
-  
-  background: rgb(187, 215, 226);
-  
+  --text: #95aeae;                    /*  Cor de fundo do botão Login/Cadastro  */
+  position: fixed;                      /* posição (fixa em relação ao viewport) Menu ancora */
+  top: 0;                                
+  left: 0;                              /*Ajusta a localização*/
+  right: 0; 
+  z-index: 999;                         /*Sobreposição de elementos, quanto maior o numero maior a prioridade*/
+  display: flex;                        /*Defini como um elemento HTML será renderizado(Flex= Adaptativo)*/
+  justify-content: space-between;       /* define como o navegador distribui o espaço entre os itens(Os itens são distribuídos uniformemente dentro do contêiner)*/
+  align-items: center;                  /*Alinha os itens (centro)*/
+  padding: 32px 48px;                   /*Área de margem nos quatro lados do elemento(Espaçamento entre o conteúdo e a borda.)*/
+  background: rgb(187, 215, 226);     /*Cor de fundo do menu*/
 }
 
 #nav {
-  display: flex;
-  list-style: none;
-  gap: .5rem; 
+  display: flex;                        /*Defini como um elemento HTML será renderizado(Flex= Adaptativo)*/
+  list-style: none;                     /* Seleciona as listas (Ul, OL), none(Tira a bolinha) */
+  gap: 8px;                             /*Distancia entre cada elemento*/
  }
  #menu {
-  display: flex;
-  list-style: none;
-  gap: .5rem; 
-  color: #0235a3;
+  display: flex;                        /*Defini como um elemento HTML será renderizado(Flex= Adaptativo)*/
+  list-style: none;                     /* Seleciona as listas (Ul, OL), none(Tira a bolinha) */
+  gap: .5rem;                           /*Distancia entre cada elemento*/
+  color: #0235a3;                     /*Cor da letra do menu*/
+  font-weight: bold;                    /*Negrito*/
  }
 
 #nav__list{
-  display: flex;
-  list-style: none;
-  gap: 0.5rem;
-  color: #0336a3;
+  display: flex;                        /*Defini como um elemento HTML será renderizado(Flex= Adaptativo)*/
+  list-style: none;                     /*Seleciona as listas (Ul, OL), none(Tira a bolinha) */
+  gap: 0.5rem;                          /*Distancia entre cada elemento*/
+  color: #0336a3;                     /*Cor das letras do Login/Cadastro*/
 }
 #nav__list a{
-  display: block;
-  padding: 0.5rem;
+  display: block;                       /*Defini como um elemento HTML será renderizado(Block= alinha em blocos)*/
+  padding: 0.5rem;                      /*Área de margem nos quatro lados do elemento(Espaçamento entre o conteúdo e a borda.)*/
 }
 
 #menu a {
-  display: block;
-  padding: 0.5rem;
+  display: block;                       /*Defini como um elemento HTML será renderizado(Block= alinha em blocos)*/
+  padding: 0.5rem;                      /*Área de margem nos quatro lados do elemento(Espaçamento entre o conteúdo e a borda.)*/
 }
 
 #btn-mobile {
-  display: none;
+  display: none;                        /*Defini como um elemento HTML será renderizado(none = Desabilita a exibição do elemento)*/
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {             /*@media = Implica alguma condição para stylos (max-whidth : condicinal que começa a funcionar a partir de 768px de largura */
   #menu {
-    display: block;
-    position: absolute;
-    width: 100%;
-    top: 70px;
-    right: 0px;
-    background: #e7e7e7;
-    transition: 0.6s;
-    z-index: 1000;
-    height: 0px;
-    visibility: hidden;
-    overflow-y: hidden;
+    display: block;                     /*Defini como um elemento HTML será renderizado(Block= alinha em blocos)*/
+    position: absolute;                 /* Posição (Sobrepõem outros elementos) */
+    width: 100%;                        /*Largura por porcentagem da tela*/
+    top: 70px;                          /*Alinhamento*/
+    right: 0px;                         /*Alinhamento*/
+    background: #ffffff;              /*Cor de fundo do menu hamburgue*/
+    transition: 0.6s;                   /*Delay na abertura do menu hamburguer*/
+    z-index: 1000;                      /*Sobreposição de elementos, quanto maior o numero maior a prioridade*/
+    height: 0px;                        /*Alinhamento*/
+    visibility: hidden;                 /*Pode mostrar ou ocultar um elemento(hidden: oculta o elemento)*/
+                    
   }
   #nav__list {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    top: 360px;
-    right: 0px;
-    background: #e7e7e7;
-    transition: 0.6s;
-    z-index: 1000;
-    height: 0px;
-    visibility: hidden;
-    overflow-y: hidden;
-    list-style: none;
+    display: flex;                      /*Defini como um elemento HTML será renderizado(Flex= Adaptativo)*/
+    position: absolute;                 /* Posição (Sobrepõem outros elementos) */
+    width: 100%;                        /*Alinhamento*/
+    top: 360px;                         /*Alinhamento*/
+    right: 0px;                         /*Alinhamento*/
+    background: #ffffff;              /*Cor de fundo do menu hamburgue*/
+    z-index: 1000;                      /*Sobreposição de elementos, quanto maior o numero maior a prioridade*/
+    height: 0px;                        /*Alinhamento*/
+    visibility: hidden;                 /*Pode mostrar ou ocultar um elemento(hidden: oculta o elemento)*/
+    list-style: none;                   /* Seleciona as listas (Ul, OL), none(Tira a bolinha) */
   }
   
 
@@ -229,7 +225,11 @@
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
 
+
 /*Slide ==================== SLIDE  ================= SLIDE  ================== SLIDE   ======================  SLIDE  =====================  SLIDE========================*/
+
+
+
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
