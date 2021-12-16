@@ -123,7 +123,7 @@
     display: block;
     width: 20px;
     height: 2px;
-    background: currentColor;
+    background: currentColor;                                 /*receba a mesma cor de fonte definida no elemento ou em um elemento pai*/
     margin-top: 5px;
     transition: 0.3s;
     position: relative;
@@ -162,7 +162,7 @@
   background: currentColor;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  transition: -webkit-transform 150ms ease-in-out;
+  transition: -webkit-transform 150ms ease-in-out;                                /*especifica um efeito de transição com início e fim lentos*/
   transition: transform 150ms ease-in-out;
   transition: transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
 }
@@ -192,10 +192,10 @@
 }
 
 .nav__link--btn--highlight {
-  border: 1.5px solid currentColor;
+  border: 1.5px solid currentColor;                         /*recebe a mesma cor de fonte definida no elemento ou em um elemento pai*/
   border-radius: 2em;
   margin-left: 1em;
-  transition: background 250ms ease-in-out;
+  transition: background 250ms ease-in-out;                 /*especifica um efeito de transição com início e fim lentos*/
   letter-spacing: 1px;
   padding: 0.75em 1.5em;
 }
@@ -284,7 +284,7 @@ font-style: normal;
 font-weight: bold;
 font-size: 30px;
 line-height: 41px;
-
+margin-top: 0 auto;
 text-align: center;
 
 color: #000000;
@@ -296,6 +296,7 @@ font-size: 18px;                          /* Tamanho da letra*/
 line-height: 36px;                        /*Altura da linha*/
 text-align: center;                       /*Alinhamento do texto*/
 color: #000000;                         /*Cor do texto*/
+margin-top: 15px;
 }
 
 .card:hover{
@@ -377,6 +378,7 @@ color: #000000;                         /*Cor do texto*/
 .slide-track:hover{
   animation-play-state: paused;
 }
+
 @keyframes scroll{
   0%{
     transform:translateX(0);
