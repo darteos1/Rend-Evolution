@@ -292,7 +292,7 @@ color: #000000;
 }
 .card p{
 font-family: Arial, Helvetica, sans-serif; /* Fonte do paragrafo*/
-font-size: 20px;                          /* Tamanho da letra*/
+font-size: 18px;                          /* Tamanho da letra*/
 line-height: 36px;                        /*Altura da linha*/
 text-align: center;                       /*Alinhamento do texto*/
 color: #000000;                         /*Cor do texto*/
