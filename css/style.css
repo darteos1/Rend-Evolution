@@ -1,5 +1,3 @@
-
-
 .logo{
   max-width: 170px;         /*Estabelece a largura máxima*/
   max-height: 68px;         /*Estabelece a Altura máxima*/
@@ -15,12 +13,8 @@
   text-align: center;       /*Alinha os itens (centro)*/           
   margin: 30px;             /*Área de margem nos quatro lados do elemento*/
 }
-  
-
 
 /* ==================================== */
-
-
 #header {
   box-sizing: border-box;               /**/
   --text: #01f8ec;                    /**/
@@ -42,14 +36,13 @@
   display: flex;
   list-style: none;
   gap: .5rem; 
- }
- #menu {
+}
+#menu {
   display: flex;
   list-style: none;
   gap: .5rem; 
   color: #0235a3;
- }
-
+}
 #nav__list{
   display: flex;
   list-style: none;
@@ -60,12 +53,10 @@
   display: block;
   padding: 0.5rem;
 }
-
 #menu a {
   display: block;
   padding: 0.5rem;
 }
-
 #btn-mobile {
   display: none;
 }
@@ -152,7 +143,6 @@
   }
 }
 
-
 .nav__link {
   --spacing: 1em;
   text-decoration: none;
@@ -222,6 +212,7 @@
 .nav__link--btn--highlight::after {
   display: none;
 }
+
 .nav-scrolled {
   --text: #333;
   --text-inverse: #e91212;
@@ -230,44 +221,44 @@
 }
 
 /*Slide ==================== SLIDE  ================= SLIDE  ================== SLIDE   ======================  SLIDE  =====================  SLIDE========================*/
-.stop-scrolling {
-  height: 100%;
+.stop-scrolling { /*Classe para parar o scrolling do Site, focando apenas no Slider*/
+  height: 100%;  
   overflow: hidden;
 }
 
-#items-wrapper {
+#items-wrapper { /*Conteiner do itens*/
   margin-top: 132px;
   width: 100vw;
 }
 
-#items { 
-  display: flex; 
+#items { /*Conteiner dos itens das imgs*/
+  display: flex;
 
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory; /*Demanda a oientação do Scroll*/
   
   scroll-behavior: smooth;
-} 
+}
 
-#items::-webkit-scrollbar {
+#items::-webkit-scrollbar { /*Remove a scroll bar do Slider*/
   display: none;
 }
 
-.item {
+.item { /*Stilo dos itens que guardam as imagens*/
   flex: none;
 
   width: 100%;
   height: 320px;
-  scroll-snap-align: start;
+  scroll-snap-align: start; /*Centraliza o scroll*/
 
-  pointer-events: none;
+  pointer-events: none; /*O mouse não pode interagir com esses elementos, apenas seu elemento-pai*/
 }
 
-img {
+img { /*Stilo das imagens*/
   width: 100%;
   height: 100%;
 
-  object-fit: cover;
+  object-fit: cover; /*Mantem a o tamanho da imagem na visualização*/
 }
 
 /* CARD ======================  CARD  =======================   CARD  =================  CARD  ====================  CARD  ====================== CARD ================*/
