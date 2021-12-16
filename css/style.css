@@ -393,6 +393,9 @@ color: #000000;                         /*Cor do texto*/
   padding: 15px;
   perspective: 100px;
 }
+.img-slide {
+  object-fit: contain;
+}
 img{
   width: 100%;
   transition: transform 1s;
